@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} — Gantt Chart for Sheets</title>
+<!-- No web fonts, no analytics, no third-party anything. A page explaining that the
+     add-on cannot phone home should not phone home itself. -->
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; color: #1a1a18;
+    background: #fdfdfc;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e8e7e3; background: #16161a; } }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 1.5rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .6rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .92rem; }
+  th, td { text-align: left; vertical-align: top; padding: .45rem .6rem; border-bottom: 1px solid #d8d7d0; }
+  @media (prefers-color-scheme: dark) { th, td { border-color: #3a3a3f; } }
+  code { font-size: .9em; background: rgba(128,128,128,.16); padding: .1em .35em; border-radius: 3px; }
+  nav { margin-bottom: 2.5rem; font-size: .92rem; }
+  nav a { margin-right: 1.1rem; }
+  footer { margin-top: 4rem; font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="{{ site.baseurl }}/">Gantt Chart for Sheets</a>
+  <a href="{{ site.baseurl }}/support/">Support</a>
+  <a href="{{ site.baseurl }}/privacy/">Privacy</a>
+  <a href="{{ site.baseurl }}/terms/">Terms</a>
+</nav>
+{{ content }}
+<footer>Gantt Chart for Sheets — a Google Sheets add-on.</footer>
+</body>
+</html>
