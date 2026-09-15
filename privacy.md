@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacy Policy — Gantt Chart for Sheets
 
-**Last updated: 11 September 2026**
+**Last updated: 15 September 2026**
 
 ## The short version
 
@@ -29,12 +29,22 @@ It does **not** request permission to:
 
 - access your Google Drive, or any spreadsheet other than the one you are working in
 - access your email, contacts, or calendar
-- read your Google account profile or email address
 - connect to any external website or service
 
 The last point is the important one. The add-on does not hold the `script.external_request`
 permission, so it cannot make network requests of any kind. Even if we wanted to send your
 data somewhere, the add-on could not do it.
+
+### What Google's install screen asks for on top of that
+
+When you install anything from the Google Workspace Marketplace, Google adds
+`userinfo.email` and `userinfo.profile` to the install screen — your name and your account's
+email address. That is Google's Marketplace requirement for every listed add-on and it is not
+removable by the developer; we tried to take it off the listing and Google puts it back.
+
+The add-on's own code does not read either of them: its script manifest declares only the two
+scopes in the table above, and nothing else is available to it at runtime. We do not receive
+your name or email address from an install, and we do not store them.
 
 ## What is stored, and where
 

@@ -18,12 +18,15 @@ prints, it shares, and it survives.
 
 ## What it asks for
 
-Two permissions, both non-sensitive:
+Two permissions:
 
 | Permission | What it allows |
 |---|---|
 | See, edit, create and delete only the specific Google Sheets file you use it with | Read your task list and write the chart into a tab of that same file |
 | Display and run third-party web content in prompts and sidebars | Show the add-on's menu and dialog boxes |
+
+Google's install screen adds your name and email address to that list. Every Marketplace
+add-on requests those and a developer cannot remove them; the add-on itself never reads them.
 
 It has **no permission to access the internet**, so nothing in your spreadsheet can leave
 it. See the [privacy policy](privacy/) for what that means in practice.
