@@ -31,13 +31,13 @@ add-on requests those and a developer cannot remove them; the add-on itself neve
 It has **no permission to access the internet**, so nothing in your spreadsheet can leave
 it. See the [privacy policy](privacy/) for what that means in practice.
 
-## Free and Pro
+## Free and Pro  {#pro}
 
 Free charts up to 50 tasks, with no limit on how long the project runs — the timeline
 changes scale instead, so a two-week sprint and a five-year programme both fit on a screen.
 
 Pro removes the task limit and adds dependency labels, custom chart colours, and no
-watermark.
+watermark. US$59 a year.
 
 ## Links
 

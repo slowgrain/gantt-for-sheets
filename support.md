@@ -75,6 +75,10 @@ dropped.
 
 ## Licence keys
 
+**Buying Pro:** https://slowgrain.app/gantt-for-sheets/#pro — you are emailed a key after
+paying. Keys are issued by hand at the moment, so allow a few hours rather than a few seconds;
+if it has been longer than a day, email support with your order reference.
+
 **Entering a key:** Extensions → Gantt Chart for Sheets → Enter licence key.
 **Removing a key:** open the same dialog, clear the box, press OK.
 
