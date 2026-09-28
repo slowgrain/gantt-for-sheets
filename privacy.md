@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacy Policy — Gantt Chart for Sheets
 
-**Last updated: 15 September 2026**
+**Last updated: 28 September 2026**
 
 ## The short version
 
@@ -70,6 +70,58 @@ email address to send your licence key to. We never see your card details.
 We keep the order reference and email address only to issue your key, reissue it if you lose
 it, and meet the record-keeping we are legally required to do. We do not use them for
 marketing, and we do not share them with anyone.
+
+## How your data is protected
+
+### In transit
+
+Your spreadsheet data never leaves Google's infrastructure. The add-on runs as Google Apps
+Script, on Google's servers, beside the spreadsheet it is reading; the chart it produces is
+written back into the same file. Every connection between your browser and that script is
+made by Google over TLS.
+
+The add-on does not hold the `script.external_request` permission, so it has no ability to
+open a network connection to anywhere — not to us, not to anyone. This is a property of the
+deployed script's manifest, which Google enforces at runtime. It is not a promise about our
+intentions; it is a permission we do not have.
+
+### At rest
+
+We keep no copy of your spreadsheet data. There is no server of ours for it to be copied to,
+no database, and no log file that records spreadsheet contents. Task names, dates, owners and
+everything else are read into memory while a chart is being built and are gone when it
+finishes.
+
+The only two values that are stored — your display preferences and your licence key, if you
+have one — are held in Google's own `PropertiesService`, which lives inside your Google
+account and is encrypted at rest by Google. We cannot read them.
+
+### Access control
+
+No person at Slowgrain can access your spreadsheet data, because there is no system through
+which to access it. There are no employees, no contractors and no third-party processors with
+a route to it. The Apps Script project that carries the add-on's code is owned by a single
+Google account, and publishing a new version of the add-on requires signing in to it.
+
+The secret used to sign licence keys is never committed to our source repository and is not
+present in any copy of the code we publish. It exists only in the deployed script and in an
+offline backup encrypted with AES-256.
+
+### Retention and deletion
+
+- **Spreadsheet data** is not retained at all. Nothing to delete.
+- **Preferences and licence key** are deleted by Google when you uninstall the add-on. You
+  can also clear the licence key yourself at any time: Extensions → Gantt Chart for Sheets →
+  Licence → leave the box empty → OK.
+- **Purchase records** — an order reference and the email address a key was sent to — are
+  kept only as long as tax law requires us to keep them, and then deleted. Write to the
+  address at the bottom of this page to have them deleted sooner where the law allows.
+
+### The chart itself
+
+The chart is written into a tab of your own spreadsheet, so it inherits that file's sharing
+settings. Anyone you have shared the spreadsheet with can see the chart, exactly as they can
+see the task list it was built from. Nothing about the chart is published or shared by us.
 
 ## Google Workspace APIs and AI models
 
