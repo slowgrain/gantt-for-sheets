@@ -37,7 +37,7 @@ Free charts up to 50 tasks, with no limit on how long the project runs — the t
 changes scale instead, so a two-week sprint and a five-year programme both fit on a screen.
 
 Pro removes the task limit and adds dependency labels, custom chart colours, and no
-watermark. US$35 a year, or US$12 for 3 months.
+watermark. US$30 a year, or US$12 for 3 months.
 
 [Buy Pro](buy/)
 
