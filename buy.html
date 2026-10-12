@@ -33,6 +33,7 @@ permalink: /buy/
   @media (prefers-color-scheme: dark) {
     button.buy { border-color: #e8e7e3; background: #e8e7e3; color: #16161a; }
   }
+  #status.done { padding: .9rem 1.1rem; border: 1px solid currentColor; border-radius: 8px; font-weight: 600; }
   /* The second plan's button is the same size as the first on purpose. Shrinking it would
      push people to the annual by making the quarter look like an afterthought; the price
      difference already does that honestly. */
@@ -81,7 +82,21 @@ any refund come from them, and they charge the sales tax or VAT your country req
     }
 
     
-    Paddle.Initialize({ token: 'live_ff53724edf185259b7ddab5bdf8' });
+    Paddle.Initialize({
+      token: 'live_ff53724edf185259b7ddab5bdf8',
+      // The checkout's own success screen disappears when it is closed, and this page would
+      // then look exactly as it did before paying, which reads as "nothing happened". Say so.
+      eventCallback: function (event) {
+        if (event.name !== 'checkout.completed') return;
+        Array.prototype.forEach.call(document.querySelectorAll('.buy, .note'), function (el) {
+          el.style.display = 'none';
+        });
+        status.textContent = 'Thank you — your order is complete. Paddle has emailed you a receipt. ' +
+          'Your licence key will follow by email, usually within a few hours; if it has not ' +
+          'arrived after a day, write to slowgrain.dev@gmail.com with the order reference from the receipt.';
+        status.className = 'done';
+      },
+    });
 
     // Paddle.js opens the checkout for ?_ptxn= by itself. Showing a Buy button on top of that
     // invites a second, parallel purchase.
