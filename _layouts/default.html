@@ -29,6 +29,17 @@
   nav { margin-bottom: 2.5rem; font-size: .92rem; }
   nav a { margin-right: 1.1rem; }
   footer { margin-top: 4rem; font-size: .85rem; opacity: .7; }
+  button.buy {
+    font: inherit; font-weight: 600; cursor: pointer; padding: .6rem 1.1rem;
+    border: 1px solid #1a1a18; border-radius: 6px; background: #1a1a18; color: #fdfdfc;
+  }
+  @media (prefers-color-scheme: dark) {
+    button.buy { border-color: #e8e7e3; background: #e8e7e3; color: #16161a; }
+  }
+  /* The second plan's button is the same size as the first on purpose. Shrinking it would
+     push people to the annual by making the quarter look like an afterthought; the price
+     difference already does that honestly. */
+  .note { display: inline-block; margin-left: .75rem; font-size: .88rem; opacity: .7; }
 </style>
 </head>
 <body>

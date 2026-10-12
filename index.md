@@ -37,7 +37,12 @@ Free charts up to 50 tasks, with no limit on how long the project runs — the t
 changes scale instead, so a two-week sprint and a five-year programme both fit on a screen.
 
 Pro removes the task limit and adds dependency labels, custom chart colours, and no
-watermark. US$59 a year.
+watermark. US$35 a year, or US$12 for 3 months.
+
+[Buy Pro](buy/)
+
+After paying you are emailed a licence key. Enter it with
+Extensions → Gantt Chart for Sheets → Enter licence key.
 
 ## Links
 

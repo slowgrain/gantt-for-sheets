@@ -1,0 +1,101 @@
+---
+layout: null
+permalink: /buy/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buy Pro — Gantt Chart for Sheets</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; color: #1a1a18;
+    background: #fdfdfc;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #e8e7e3; background: #16161a; } }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 1.5rem; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .6rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .92rem; }
+  th, td { text-align: left; vertical-align: top; padding: .45rem .6rem; border-bottom: 1px solid #d8d7d0; }
+  @media (prefers-color-scheme: dark) { th, td { border-color: #3a3a3f; } }
+  code { font-size: .9em; background: rgba(128,128,128,.16); padding: .1em .35em; border-radius: 3px; }
+  nav { margin-bottom: 2.5rem; font-size: .92rem; }
+  nav a { margin-right: 1.1rem; }
+  footer { margin-top: 4rem; font-size: .85rem; opacity: .7; }
+  button.buy {
+    font: inherit; font-weight: 600; cursor: pointer; padding: .6rem 1.1rem;
+    border: 1px solid #1a1a18; border-radius: 6px; background: #1a1a18; color: #fdfdfc;
+  }
+  @media (prefers-color-scheme: dark) {
+    button.buy { border-color: #e8e7e3; background: #e8e7e3; color: #16161a; }
+  }
+  /* The second plan's button is the same size as the first on purpose. Shrinking it would
+     push people to the annual by making the quarter look like an afterthought; the price
+     difference already does that honestly. */
+  .note { display: inline-block; margin-left: .75rem; font-size: .88rem; opacity: .7; }
+</style>
+</head>
+<body>
+<nav><a href="../">&larr; Gantt Chart for Sheets</a></nav>
+
+<h1>Gantt Chart for Sheets — Pro</h1>
+
+<p id="intro"><strong>US$35 a year, or US$12 for 3 months.</strong> Removes the 50-task limit, and adds dependency
+labels, custom chart colours and no watermark. Everything else works on the free plan. Both
+terms unlock exactly the same features — the only difference is how long the key lasts.</p>
+
+<p><button class="buy" type="button" data-price="pri_01m4pxev9jdcv3z8x765bw293n" hidden>Buy Pro — US$35 a year</button>
+<span class="note">Best value — four quarters cost US$48.</span></p>
+<p><button class="buy" type="button" data-price="pri_01m4q8bxf2xtv4re158mame08x" hidden>Buy Pro — US$12 for 3 months</button>
+<span class="note">Try it on a real project first.</span></p>
+
+<p id="status" role="status"></p>
+
+<h2>What happens after you pay</h2>
+<p>You are emailed a licence key. Keys are issued by hand at the moment, so allow a few hours
+rather than a few seconds. Enter it with <strong>Extensions &rarr; Gantt Chart for Sheets &rarr;
+Enter licence key</strong>. The key applies to your Google account, so you enter it once and it
+works in every spreadsheet you open.</p>
+
+<p>If a key has not arrived within a day, write to
+<a href="mailto:slowgrain.dev@gmail.com">slowgrain.dev@gmail.com</a> with your order reference.</p>
+
+<h2>Refunds and tax</h2>
+<p>Payment is handled by Paddle, which is the merchant of record for this sale: the receipt and
+any refund come from them, and they charge the sales tax or VAT your country requires. See the
+<a href="../terms/">terms of service</a> and the <a href="../privacy/">privacy policy</a>.</p>
+
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.buy');
+    var status = document.getElementById('status');
+
+    if (typeof Paddle === 'undefined') {
+      status.textContent = 'The checkout could not load. Please email slowgrain.dev@gmail.com and we will take it from there.';
+      return;
+    }
+
+    
+    Paddle.Initialize({ token: 'live_ff53724edf185259b7ddab5bdf8' });
+
+    // Paddle.js opens the checkout for ?_ptxn= by itself. Showing a Buy button on top of that
+    // invites a second, parallel purchase.
+    if (new URLSearchParams(location.search).has('_ptxn')) return;
+
+    Array.prototype.forEach.call(buttons, function (button) {
+      button.hidden = false;
+      button.addEventListener('click', function () {
+        Paddle.Checkout.open({
+          items: [{ priceId: button.getAttribute('data-price'), quantity: 1 }],
+        });
+      });
+    });
+  })();
+</script>
+</body>
+</html>
