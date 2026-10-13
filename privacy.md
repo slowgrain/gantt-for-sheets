@@ -65,7 +65,10 @@ any time: Extensions → Gantt Chart for Sheets → Licence → leave the box em
 
 Purchases are handled by our payment provider, not by this add-on. When you buy Pro, the
 payment provider processes your payment details and gives us an order reference and the
-email address to send your licence key to. We never see your card details.
+email address to send your licence key to. We never see your card details. The key is
+generated and emailed to you automatically by a small script in our own Google account; the
+order reference and your email address are kept in that script's private storage, which only
+we can open.
 
 We keep the order reference and email address only to issue your key, reissue it if you lose
 it, and meet the record-keeping we are legally required to do. We do not use them for
