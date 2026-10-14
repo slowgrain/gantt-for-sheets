@@ -1,0 +1,44 @@
+{
+  "en": {
+    "home": "Home",
+    "support": "Support",
+    "privacy": "Privacy (English)",
+    "terms": "Terms (English)",
+    "languages": "Language"
+  },
+  "ko": {
+    "home": "홈",
+    "support": "도움말",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용약관",
+    "languages": "언어"
+  },
+  "ja": {
+    "home": "ホーム",
+    "support": "サポート",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "languages": "言語"
+  },
+  "es-419": {
+    "home": "Inicio",
+    "support": "Ayuda",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "languages": "Idioma"
+  },
+  "pt-BR": {
+    "home": "Início",
+    "support": "Suporte",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "languages": "Idioma"
+  },
+  "de": {
+    "home": "Start",
+    "support": "Hilfe",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "languages": "Sprache"
+  }
+}

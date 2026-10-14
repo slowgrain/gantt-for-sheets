@@ -1,3 +1,4 @@
 title: Gantt Chart for Sheets
 description: A Gantt chart add-on for Google Sheets.
-url: https://slowgrain.app/gantt-for-sheets
+url: https://slowgrain.app
+baseurl: /gantt-for-sheets

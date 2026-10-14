@@ -2,6 +2,9 @@
 layout: default
 title: Gantt Chart for Sheets
 permalink: /
+lang: en
+home_path: /
+support_path: /support/
 ---
 
 # Gantt Chart for Sheets
@@ -17,6 +20,27 @@ one — which is why the established add-ons ship help pages about reloading and
 A chart written into a tab has nothing to attribute: it works with any number of accounts
 signed in, in every browser, and it is still there when the add-on is not running. It
 prints, it shares, and it survives.
+
+## Use the task sheet you already have
+
+The table can start anywhere and its columns can stay in their current order. Map task names,
+planned dates or duration, owners, progress, predecessors, WBS, effort and daily capacity to the
+columns you already use. If a heading is unfamiliar, the add-on can infer its meaning from the
+values. Preview six parsed tasks and the calculated dates before saving. The mapping is remembered
+for that tab, and the source task sheet is not rewritten.
+
+## Complete the workflow in the spreadsheet
+
+Create a basic task template, a team workload plan, or a plan-versus-actual starter sheet from the
+add-on menu. Edit its examples and create the chart in another tab in the same spreadsheet. If the
+current sheet is missing required columns, the add-on offers to create the format for you without
+overwriting existing data.
+
+## See workload and progress
+
+Total effort is divided evenly across assigned people and scheduled workdays. You can enter daily
+hours for each person directly; those values take priority. The chart shows capacity overloads,
+planned-versus-actual progress, and late work.
 
 ## What it asks for
 
@@ -51,3 +75,5 @@ Extensions → Gantt Chart for Sheets → Enter licence key.
 - [Support and troubleshooting](support/)
 - [Privacy policy](privacy/)
 - [Terms of service](terms/)
+
+Google Sheets™ is a trademark of Google LLC. Google LLC does not sponsor or endorse this add-on.

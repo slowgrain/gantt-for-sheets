@@ -2,11 +2,14 @@
 layout: default
 title: Terms of Service
 permalink: /terms/
+lang: en
+home_path: /
+support_path: /support/
 ---
 
 # Terms of Service — Gantt Chart for Sheets
 
-**Last updated: 14 September 2026**
+**Last updated: 14 October 2026**
 
 ## 1. What this is
 
@@ -24,7 +27,8 @@ not resell it, redistribute it, or attempt to extract or reuse its licence-key m
 The add-on is free to use up to 50 tasks per chart, with no limit on project length.
 
 Pro removes the task limit and unlocks dependency labels and custom chart colours.
-Pro is sold as an annual licence. When you buy it you receive a licence key by email.
+Pro is sold as a 12-month or 3-month licence, as stated at checkout. When you buy it you
+receive a licence key by email.
 
 ## 4. Your licence key
 
@@ -68,8 +72,8 @@ Nothing here excludes liability that cannot lawfully be excluded.
 ## 9. Dependencies outside our control
 
 The add-on runs on Google Apps Script inside Google Sheets. If Google changes or withdraws
-that platform, the add-on may stop working. We will refund the unused portion of a current
-annual licence if that happens and we cannot restore service.
+that platform, the add-on may stop working. We will refund the unused portion of the current
+licence if that happens and we cannot restore service.
 
 ## 10. Ending it
 

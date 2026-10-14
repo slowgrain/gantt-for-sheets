@@ -2,6 +2,9 @@
 layout: default
 title: Support
 permalink: /support/
+lang: en
+home_path: /
+support_path: /support/
 ---
 
 # Support — Gantt Chart for Sheets
@@ -18,8 +21,9 @@ Re-run it whenever the plan changes; the chart is rebuilt from scratch each time
 
 ## How to lay out your task list
 
-Your table does not have to start at cell A1, and column order does not matter. Headings are
-recognised automatically:
+Your table does not have to start at cell A1, and column order does not matter. English,
+Korean, Japanese, Spanish, Portuguese, French, and German headings are recognised
+automatically:
 
 | Column | Recognised headings | Required? |
 |---|---|---|

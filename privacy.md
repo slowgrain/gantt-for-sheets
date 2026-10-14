@@ -2,11 +2,14 @@
 layout: default
 title: Privacy Policy
 permalink: /privacy/
+lang: en
+home_path: /
+support_path: /support/
 ---
 
 # Privacy Policy — Gantt Chart for Sheets
 
-**Last updated: 28 September 2026**
+**Last updated: 14 October 2026**
 
 ## The short version
 

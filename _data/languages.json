@@ -1,0 +1,26 @@
+[
+  {
+    "name": "English",
+    "url": "/"
+  },
+  {
+    "name": "한국어",
+    "url": "/ko/"
+  },
+  {
+    "name": "日本語",
+    "url": "/ja/"
+  },
+  {
+    "name": "Español (Latinoamérica)",
+    "url": "/es/"
+  },
+  {
+    "name": "Português (Brasil)",
+    "url": "/pt-BR/"
+  },
+  {
+    "name": "Deutsch",
+    "url": "/de/"
+  }
+]
