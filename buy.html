@@ -45,14 +45,14 @@ permalink: /buy/
 
 <h1>Gantt Chart for Sheets — Pro</h1>
 
-<p id="intro"><strong>US$35 a year, or US$12 for 3 months.</strong> Removes the 50-task limit, and adds dependency
+<p id="intro"><strong>US$21 a year (40% off US$35), or US$8.40 for 3 months (30% off US$12), launch prices until 31 January 2027.</strong> Removes the 50-task limit, and adds dependency
 labels, custom chart colours and no watermark. Everything else works on the free plan. Both
 terms unlock exactly the same features — the only difference is how long the key lasts.</p>
 
-<p><button class="buy" type="button" data-price="pri_01m4pxev9jdcv3z8x765bw293n" hidden>Buy Pro — US$35 a year</button>
-<span class="note">Best value — four quarters cost US$48.</span></p>
-<p><button class="buy" type="button" data-price="pri_01m4q8bxf2xtv4re158mame08x" hidden>Buy Pro — US$12 for 3 months</button>
-<span class="note">Try it on a real project first.</span></p>
+<p><button class="buy" type="button" data-price="pri_01m4pxev9jdcv3z8x765bw293n" data-discount="dsc_01m4z055eaf2webcbkmg4qsy7f" hidden>Buy Pro — <s>US$35</s> US$21 a year</button>
+<span class="note">Launch price: 40% off US$35 until 31 January 2027.</span></p>
+<p><button class="buy" type="button" data-price="pri_01m4q8bxf2xtv4re158mame08x" data-discount="dsc_01m4z080rt3ycs9n5jvpjenexk" hidden>Buy Pro — <s>US$12</s> US$8.40 for 3 months</button>
+<span class="note">Launch price: 30% off US$12 until 31 January 2027.</span></p>
 
 <p id="status" role="status"></p>
 
@@ -105,9 +105,10 @@ any refund come from them, and they charge the sales tax or VAT your country req
     Array.prototype.forEach.call(buttons, function (button) {
       button.hidden = false;
       button.addEventListener('click', function () {
-        Paddle.Checkout.open({
-          items: [{ priceId: button.getAttribute('data-price'), quantity: 1 }],
-        });
+        var settings = { items: [{ priceId: button.getAttribute('data-price'), quantity: 1 }] };
+        var discount = button.getAttribute('data-discount');
+        if (discount) settings.discountId = discount;
+        Paddle.Checkout.open(settings);
       });
     });
   })();
