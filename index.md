@@ -14,6 +14,9 @@ rather than into a sidebar panel.
 
 **[Install it from the Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_for_sheets/946333481156)** — free for up to 50 tasks.
 
+**Launch offer on Pro:** 40% off the year, 30% off three months (until 31 January 2027). [Buy Pro](buy/)
+
+
 That one decision is the product. A sidebar is an iframe served from another origin, and
 when a browser has several Google accounts signed in it is routinely attributed to the wrong
 one — which is why the established add-ons ship help pages about reloading and waiting.

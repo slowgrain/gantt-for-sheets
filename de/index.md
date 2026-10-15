@@ -14,6 +14,8 @@ Gantt Chart for Sheets™ erstellt das Diagramm direkt in Ihrer Tabelle, ohne di
 
 [Im Google Workspace Marketplace installieren](https://workspace.google.com/marketplace/app/gantt_chart_for_sheets/946333481156) — kostenlos für bis zu 50 Aufgaben.
 
+**Einführungsrabatt auf Pro:** 40 % auf das Jahr, 30 % auf drei Monate (bis 31. Januar 2027)
+
 ## Arbeiten Sie mit Ihrer vorhandenen Aufgabenliste
 
 Die Tabelle kann an beliebiger Stelle beginnen und die Spalten können in jeder Reihenfolge stehen. Ordnen Sie bestehende Spalten Aufgaben, Terminen oder Dauer, Verantwortlichen, Fortschritt, Vorgängern, WBS, Stunden und Tageskapazität zu. Vor dem Speichern können Sie sechs echte Aufgaben und die berechneten Termine prüfen. Die Zuordnung wird pro Tabellenblatt gespeichert; Quelldaten werden nicht umgeschrieben.
@@ -28,7 +30,7 @@ Berechnen Sie Vorgänger, Arbeitstage, Feiertage, WBS-Phasen, den kritischen Pfa
 
 ## Kostenlos und Pro {#pro}
 
-Der kostenlose Tarif unterstützt bis zu 50 Aufgaben und begrenzt die Projektlaufzeit nicht. Pro hebt das Aufgabenlimit auf und ergänzt Vorgängerbeschriftungen, eigene Farben und die Entfernung des Wasserzeichens. Preis: US$35 pro Jahr oder US$12 für drei Monate.
+Der kostenlose Tarif unterstützt bis zu 50 Aufgaben und begrenzt die Projektlaufzeit nicht. Pro hebt das Aufgabenlimit auf und ergänzt Vorgängerbeschriftungen, eigene Farben und die Entfernung des Wasserzeichens. Einführungspreis (bis 31. Januar 2027): US$21 pro Jahr (40 % Rabatt auf US$35) oder US$8,40 für drei Monate (30 % Rabatt auf US$12). [Pro kaufen](/gantt-for-sheets/buy/)
 
 Google Sheets™ ist eine Marke von Google LLC. Google LLC unterstützt oder genehmigt dieses Add-on nicht.
 

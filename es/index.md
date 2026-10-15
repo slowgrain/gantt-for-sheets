@@ -14,6 +14,8 @@ Gantt Chart for Sheets™ crea el gráfico dentro de la hoja de cálculo sin reo
 
 [Instálalo desde Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_for_sheets/946333481156) — gratis para hasta 50 tareas.
 
+**Descuento de lanzamiento en Pro:** 40 % el plan anual y 30 % el de 3 meses (hasta el 31 de enero de 2027)
+
 ## Usa la lista de tareas que ya tienes
 
 La tabla puede empezar en cualquier celda y las columnas pueden estar en cualquier orden. Asigna las columnas existentes a tareas, fechas o duración, responsables, progreso, predecesoras, WBS, horas y capacidad diaria. Antes de guardar puedes revisar seis tareas reales y sus fechas calculadas. La configuración se recuerda por pestaña y no reescribe los datos originales.
@@ -28,7 +30,7 @@ Calcula predecesoras, días laborables, festivos, fases WBS, ruta crítica y ret
 
 ## Gratis y Pro {#pro}
 
-El plan gratuito permite hasta 50 tareas y no limita la duración del proyecto. Pro elimina el límite y añade etiquetas de predecesoras, colores personalizados y eliminación de marca de agua. Precio: US$35 al año o US$12 por 3 meses.
+El plan gratuito permite hasta 50 tareas y no limita la duración del proyecto. Pro elimina el límite y añade etiquetas de predecesoras, colores personalizados y eliminación de marca de agua. Precio de lanzamiento (hasta el 31 de enero de 2027): US$21 al año (40 % de descuento sobre US$35) o US$8,40 por 3 meses (30 % de descuento sobre US$12). [Comprar Pro](/gantt-for-sheets/buy/)
 
 Google Sheets™ es una marca de Google LLC. Google LLC no patrocina ni aprueba este complemento.
 
